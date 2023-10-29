@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,16 +9,148 @@
     <link rel="stylesheet" href="./assets/styles/styles.css" />
   </head>
 
-  <body>
-    <!-- START: Colorful Blurred Background -->
-    <div class="absolute h-screen w-screen">
-      <div class="absolute h-[25rem] w-[40rem] rounded-full m-[22rem] rotate-45 bg-blue-400"></div>
-      <div class="absolute h-[25rem] w-[45rem] rounded-full right-[23rem] top-[15rem] rotate-[-60deg] bg-purple-400"></div>
-    </div>
-    <!-- END: Colorful Blurred Background -->
+  <body class="bg-gray-100">
     <!-- START: Main Section -->
-    <section class="flex h-screen w-full items-center justify-center backdrop-blur-[190px]">
-      <h1 class="text-6xl font-semibold text-stone-800">Hello World</h1>
+    <section class="flex h-screen w-full items-center justify-center">
+      <div
+        class="border-black bg-white border-2 flex flex-col p-2 shadow-xl print:shadow-none">
+        <h1 class="text-2xl text-center border-b-2 border-black/70 pb-2">
+          TPUSA @ CSUF Presents Trivia Night
+        </h1>
+        <div class="flex flex-row justify-between space-x-6">
+          <div class="flex flex-row space-x-1">
+            <label for="team-name" class="text-lg font-semibold mt-auto"
+              >Team Name:</label
+            >
+            <input
+              id="team-name"
+              type="text"
+              class="appearance-none border-0 border-b-2 outline-none" />
+          </div>
+          <div class="flex flex-row space-x-1">
+            <label for="round" class="text-lg font-semibold mt-auto"
+              >Round:</label
+            >
+            <input
+              id="round"
+              type="text"
+              class="appearance-none border-0 border-b-2 outline-none w-12" />
+          </div>
+        </div>
+        <!-- START: Answers -->
+        <ol
+          class="flex flex-col space-y-2 list-decimal pl-3 text-2xl font-semibold mt-4 list-inside">
+          <li class="w-full">
+            <div class="inline-flex flex-row space-x-3" style="width: 93%">
+              <input
+                type="text"
+                class="appearance-none border-0 border-b-2 outline-none w-full !pb-0" />
+              <input
+                type="number"
+                class="border-2 border-black h-8 w-8 mt-auto" />
+            </div>
+          </li>
+          <li class="w-full">
+            <div class="inline-flex flex-row space-x-3" style="width: 93%">
+              <input
+                type="text"
+                class="appearance-none border-0 border-b-2 outline-none w-full !pb-0" />
+              <input
+                type="number"
+                class="border-2 border-black h-8 w-8 mt-auto" />
+            </div>
+          </li>
+          <li class="w-full">
+            <div class="inline-flex flex-row space-x-3" style="width: 93%">
+              <input
+                type="text"
+                class="appearance-none border-0 border-b-2 outline-none w-full !pb-0" />
+              <input
+                type="number"
+                class="border-2 border-black h-8 w-8 mt-auto" />
+            </div>
+          </li>
+          <li class="w-full">
+            <div class="inline-flex flex-row space-x-3" style="width: 93%">
+              <input
+                type="text"
+                class="appearance-none border-0 border-b-2 outline-none w-full !pb-0" />
+              <input
+                type="number"
+                class="border-2 border-black h-8 w-8 mt-auto" />
+            </div>
+          </li>
+          <li class="w-full">
+            <div class="inline-flex flex-row space-x-3" style="width: 93%">
+              <input
+                type="text"
+                class="appearance-none border-0 border-b-2 outline-none w-full !pb-0" />
+              <input
+                type="number"
+                class="border-2 border-black h-8 w-8 mt-auto" />
+            </div>
+          </li>
+          <li class="w-full">
+            <div class="inline-flex flex-row space-x-3" style="width: 93%">
+              <input
+                type="text"
+                class="appearance-none border-0 border-b-2 outline-none w-full !pb-0" />
+              <input
+                type="number"
+                class="border-2 border-black h-8 w-8 mt-auto" />
+            </div>
+          </li>
+          <li class="w-full">
+            <div class="inline-flex flex-row space-x-3" style="width: 93%">
+              <input
+                type="text"
+                class="appearance-none border-0 border-b-2 outline-none w-full !pb-0" />
+              <input
+                type="number"
+                class="border-2 border-black h-8 w-8 mt-auto" />
+            </div>
+          </li>
+          <li class="w-full">
+            <div class="inline-flex flex-row space-x-3" style="width: 93%">
+              <input
+                type="text"
+                class="appearance-none border-0 border-b-2 outline-none w-full !pb-0" />
+              <input
+                type="number"
+                class="border-2 border-black h-8 w-8 mt-auto" />
+            </div>
+          </li>
+          <li class="w-full">
+            <div class="inline-flex flex-row space-x-3" style="width: 93%">
+              <input
+                type="text"
+                class="appearance-none border-0 border-b-2 outline-none w-full !pb-0" />
+              <input
+                type="number"
+                class="border-2 border-black h-8 w-8 mt-auto" />
+            </div>
+          </li>
+          <li class="w-full">
+            <div class="inline-flex flex-row space-x-3" style="width: 89.8%">
+              <input
+                type="text"
+                class="appearance-none border-0 border-b-2 outline-none w-full !pb-0" />
+              <input
+                type="number"
+                class="border-2 border-black h-8 w-8 mt-auto" />
+            </div>
+          </li>
+          <li class="w-full">
+            <div class="inline-flex flex-row space-x-3" style="width: 89.8%">
+              <input
+                type="text"
+                class="appearance-none border-0 border-b-2 outline-none w-full !pb-0" />
+              <input type="number" class="border-0 h-8 w-8 mt-auto" />
+            </div>
+          </li>
+        </ol>
+        <!-- END: Answers -->
+      </div>
     </section>
     <!-- END: Main Section -->
   </body>
