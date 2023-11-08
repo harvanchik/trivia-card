@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="./assets/styles/styles.css" />
   </head>
 
-  <body class="bg-gray-100">
+  <body class="bg-gray-100 print:bg-white">
     <!-- START: Main Section -->
-    <section class="flex h-screen w-full items-center justify-center">
+    <section
+      class="flex flex-col h-screen w-full pl-20 items-center justify-center">
+      <!-- START: Trivia Card -->
       <div
         class="border-black bg-white border-2 flex flex-col p-2 shadow-xl print:shadow-none">
         <h1 class="text-2xl text-center border-b-2 border-black/70 pb-2">
@@ -141,16 +143,22 @@
             </div>
           </li>
           <li class="w-full">
-            <div class="inline-flex flex-row space-x-3" style="width: 89.8%">
+            <div
+              class="relative inline-flex flex-row space-x-3"
+              style="width: 89.8%">
               <input
                 type="text"
                 class="appearance-none border-0 border-b-2 outline-none w-full !pb-0" />
-              <input type="number" class="border-0 h-8 w-8 mt-auto" />
+              <input
+                type="number"
+                class="border-2 rounded-full border-black h-8 w-8 mt-auto mx-auto" />
+              <p class="absolute right-[0.427rem]">D</p>
             </div>
           </li>
         </ol>
         <!-- END: Answers -->
       </div>
+      <!-- END: Trivia Card -->
     </section>
     <!-- END: Main Section -->
   </body>
