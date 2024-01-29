@@ -9,7 +9,7 @@ import rev from 'gulp-rev';
 import rewrite from 'gulp-rev-rewrite';
 
 const root = './'; // the path to the root of your project (you probably do not need to change this)
-const destination = `${root}dist`; // the destination folder of the gulped content (change as needed (i.e. 'docs'))
+const destination = `${root}docs`; // the destination folder of the gulped content (change as needed (i.e. 'docs'))
 const manifest = `${root}rev-manifest.json`; // the name of the manifest file (do not edit unless you know what you're doing)
 
 /**
@@ -30,7 +30,7 @@ function html() {
         minifyJS: true,
         removeEmptyAttributes: true,
         removeAttributeQuotes: true,
-      })
+      }),
     )
     .pipe(rewrite({ manifest: readFileSync(manifest) }))
     .pipe(gulp.dest(destination));
@@ -67,7 +67,7 @@ function javascript() {
           comments: false,
           quote_style: 1,
         },
-      })
+      }),
     )
     .pipe(rev())
     .pipe(gulp.dest(`${destination}/assets/js`))
@@ -86,7 +86,7 @@ function images() {
     .pipe(
       image({
         quiet: true, // set to false to log results for every image processed
-      })
+      }),
     )
     .pipe(rev())
     .pipe(gulp.dest(`${destination}/assets/img`))
